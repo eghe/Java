@@ -1,0 +1,8 @@
+1. mutable vs immutable:
+    mutable: content of an instance reference can be altered
+    immutable: content of an instance reference can not be altered
+    String is immutable:
+      String text = new String("aabbcc");
+      text.replaceAll("aa", "11");
+      text will still be aabbcc not 11bbcc
+      text = text.replaceAll("aa", "11") - will work

@@ -1,0 +1,10 @@
+  2   - add operations to a structure
+  3   - separate the algoritm of the structure on which it operates
+  4   - work on the structure without modifying it
+  5   - applicable when the structure on which visitor operats does not modify v    ery often. If it modifies often, then the visitor needs to change the visit     function or if a new structure is added, visitor needs to implement new visi    t for the new data type.
+  6 
+  7   IVisior - interface that visits an object
+  8   IVisitable - interface that accept a visitor
+  9 
+ 10   Visitor pattern is also called double dispatch because we determine at run    time both the type of visitor and visitable.
+
